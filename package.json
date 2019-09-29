@@ -1,0 +1,31 @@
+{
+  "name": "crud-nodeJS-mariaDB",
+  "version": "1.0.0",
+  "description": "Prueba de desarrolladores crud",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tonysk08/crud-nodeJS-mariaDB.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tonysk08/crud-nodeJS-mariaDB/issues"
+  },
+  "homepage": "https://github.com/tonysk08/crud-nodeJS-mariaDB#readme",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "ejs": "^2.7.1",
+    "express": "^4.17.1",
+    "express-myconnection": "^1.0.4",
+    "morgan": "^1.9.1",
+    "mysql": "^2.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.3"
+  }
+}
