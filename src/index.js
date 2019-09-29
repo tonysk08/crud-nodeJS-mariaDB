@@ -8,6 +8,9 @@ const colors= require('colors');
 
 const app=express();
 
+//impotando rutas
+const customerRoutes =require('./routes/customer')
+
 //setings
 app.set('port',process.env.PORT || 3000);
 app.set('view engine','ejs');
@@ -22,6 +25,12 @@ app.set('views',path.join(__dirname,'views'));
      port:3306,
      database:'crudNodeJS'
  },'single'));
+
+ //routes
+app.use('/',customerRoutes);
+
+//statics files
+app.use(express.static(path.join(__dirname,'public')));
 
 app.listen(app.get('port'), function()
 {
