@@ -7,7 +7,7 @@ controller.list = (req, res) => {
             {
                 res.json(err);
             }
-            res.render('')
+            res.render('customers',)
         });
     });
 };
