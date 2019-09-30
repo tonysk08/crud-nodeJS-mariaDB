@@ -26,6 +26,8 @@ app.set('views',path.join(__dirname,'views'));
      database:'crudNodeJS'
  },'single'));
 
+ app.use(express.urlencoded({extended:false}));
+
  //routes
 app.use('/',customerRoutes);
 
