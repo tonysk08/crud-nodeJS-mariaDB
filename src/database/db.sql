@@ -19,7 +19,7 @@ USE `crudnodejs`;
 -- Volcando estructura para tabla crudnodejs.customers
 CREATE TABLE IF NOT EXISTS `customers` (
   `id` int(6) NOT NULL AUTO_INCREMENT,
-  `Name` varchar(50) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
+  `name` varchar(50) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
   `address` varchar(100) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
   `phone` varchar(15) COLLATE utf8_spanish_ci NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`)
